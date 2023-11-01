@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mplay</title>
+    <link rel="shortcut icon" href="music.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mplay.css">
+
+
+</head>
+<body> 
+    <div class="container">
+      <di class="musicplayer">
+        <nav>
+            <p><i class="fa fa-angle-left"></i></p>
+            <p><i class="fa fa-align-justify" ></i></p>
+        </nav>
+        <nav class="icon">
+          <img src="mu.jpg" alt="music " id="mu">
+          
+        </nav>
+        <p>Stephen Zechariah</p>
+          <p style="font-size: small;">naam song Reprise</p>
+
+        <div class="tool">
+          <audio  id="song">
+            <source src="Naam 2  Adi Penne Reprise Official Video 4K  T Suriavelan  Rupiny Anbalagan  Stephen Zechariah.mp3 " type="audio/mpeg">
+          </audio>
+          <input type="range" value="0" id="progress" >
+          <div class="play">
+            <p><i class="fa fa-backward"></i></p>
+            <p onclick="playpause()"><i class="fa fa-play" id="cntrlicon"></i></p>
+            <p><i class="fa fa-forward"></i></p>
+
+          </div>
+
+        </div>
+      </di>
+
+
+    </div>
+
+
+
+    <script src="mplay.js"></script>
+</body>
+</html>
