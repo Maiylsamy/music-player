@@ -8,15 +8,16 @@ song.onloadedmetadata =  function(){
 }
 
 function playpause(){
-    if(cntrlicon.classList.contains("fa-play")){
-      
-          song.play();
-        cntrlicon.classList.add ("fa-pause");
-        cntrlicon.classList.remove("fa-play");
-    }else{
-          song.pause();
+    if(cntrlicon.classList.contains("fa-pause")){
+        song.pause();
         cntrlicon.classList.remove("fa-pause");
         cntrlicon.classList.add("fa-play");
+         
+    }else{
+        song.play();
+        cntrlicon.classList.add ("fa-pause");
+        cntrlicon.classList.remove("fa-play");
+          
     }
 }
 if(song.play()){
